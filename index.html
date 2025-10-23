@@ -3,79 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>내 게임 공식 페이지</title>
+  <title>Rynoxsoft | 감성적인 스토리 게임 스튜디오</title>
   <style>
     body {
-      font-family: 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
-      background: #f9fafc;
-      color: #222;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
     header {
-      background: #004aad;
-      color: white;
-      padding: 40px 20px;
+      text-align: center;
+      padding: 80px 20px 40px;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.2em;
+      font-size: 48px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 18px;
+      color: #aaa;
     }
     section {
-      max-width: 700px;
-      margin: 40px auto;
+      max-width: 900px;
+      margin: 60px auto;
       padding: 0 20px;
-      line-height: 1.7;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 26px;
-      background: #0080ff;
-      color: white;
+    h2 {
+      border-left: 4px solid #ff5e5e;
+      padding-left: 10px;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .game-card {
+      flex: 1 1 260px;
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-4px);
+    }
+    .game-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .contact {
+      text-align: center;
+      margin-top: 60px;
+      color: #aaa;
+      font-size: 14px;
+    }
+    a {
+      color: #ff5e5e;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
     }
-    .btn:hover {
-      background: #0069d9;
-    }
-    footer {
-      background: #eee;
-      color: #555;
-      padding: 20px 10px;
-      font-size: 0.9em;
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>내 게임 이름</h1>
-    <p>공식 홈페이지</p>
+    <h1>Rynoxsoft</h1>
+    <p>감성적인 스토리와 몰입도 있는 게임을 만드는 인디 스튜디오</p>
   </header>
 
-  <section>
-    <h2>게임 소개</h2>
+  <section id="about">
+    <h2>About Us</h2>
     <p>
-      <strong>“내 게임 이름”</strong>은(는) 원스토어를 통해 서비스되는 모바일 게임입니다.<br>
-      다양한 스테이지와 흥미로운 스토리를 즐길 수 있으며, 플레이어의 선택에 따라<br>
-      전개가 달라지는 인터랙티브한 요소가 특징입니다.
-    </p>
-
-    <a href="https://onestore.co.kr/" target="_blank" class="btn">
-      원스토어에서 다운로드
-    </a>
-
-    <h3 style="margin-top:50px;">문의</h3>
-    <p>
-      이메일: <a href="mailto:contact@rynoxsoft.com">contact@rynoxsoft.com</a><br>
-      사업자명: 라이녹스소프트
+      Rynoxsoft는 스토리 중심의 연애 시뮬레이션과 감성 게임을 개발하는 인디 팀입니다.<br />
+      진심을 담은 캐릭터, 선택에 따라 달라지는 이야기, 그리고 여운이 남는 결말을 추구합니다.
     </p>
   </section>
 
-  <footer>
-    &copy; 2025 Rynoxsoft. All rights reserved.
-  </footer>
+  <section id="games">
+    <h2>Our Games</h2>
+    <div class="games">
+      <div class="game-card">
+        <img src="campus-romance-thumbnail.jpg" alt="Campus Romance">
+        <h3>Campus Romance</h3>
+        <p>캠퍼스를 배경으로 펼쳐지는 감성 연애 시뮬레이션 게임</p>
+        <a href="https://campus.rynoxsoft.com" target="_blank">공식 페이지 보기 →</a>
+      </div>
+      <!-- 차기작이 생기면 여기에 추가 -->
+    </div>
+  </section>
+
+  <div class="contact">
+    <p>문의: <a href="mailto:contact@rynoxsoft.com">contact@rynoxsoft.com</a></p>
+    <p>© 2025 Rynoxsoft. All rights reserved.</p>
+  </div>
 </body>
 </html>
