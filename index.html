@@ -1,126 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rynoxsoft | 감성적인 스토리 게임 스튜디오</title>
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-            background-color: #0e0e0e;
-            color: #f5f5f5;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            padding: 80px 20px 40px;
-        }
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 18px;
-            color: #aaa;
-        }
-        section {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            border-left: 4px solid #ff5e5e;
-            padding-left: 10px;
-            font-size: 26px;
-            margin-bottom: 20px;
-        }
-        .games {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .game-card {
-            flex: 1 1 260px;
-            background: #1a1a1a;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.2s ease;
-        }
-        .game-card:hover {
-            transform: translateY(-4px);
-        }
-        /* 게임 썸네일 이미지에 대한 스타일 */
-        .game-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-        .contact {
-            text-align: center;
-            margin-top: 60px;
-            color: #aaa;
-            font-size: 14px;
-            padding-bottom: 40px; /* 하단 여백 추가 */
-        }
-        /* ★★★ 배지 이미지 크기 수정 및 중앙 정렬 ★★★ */
-        .play-badge {
-            height: 50px; /* 높이 고정 */
-            width: auto !important; /* 너비 자동 조절 */
-            /* .game-card img의 width: 100%를 무시하고 원하는 크기로 표시되게 함 */
-            display: block; 
-            margin: 10px auto 0; /* 위쪽 10px 여백 및 중앙 정렬 */
-        }
-        /* 링크 스타일 (텍스트 링크에만 적용되도록) */
-        a {
-            color: #ff5e5e;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* 배지 링크에는 밑줄이 생기지 않도록 방지 (선택 사항) */
-        .game-card a:has(.play-badge):hover {
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142b2b">
+  <title>Rynoxsoft | 앱·웹서비스</title>
+  <meta name="description" content="일상과 업무를 더 편리하게 만드는 Rynoxsoft의 앱과 웹서비스를 만나보세요. 사업장 국민연금 가입 현황과 공식 소식을 안내합니다.">
+  <link rel="canonical" href="https://www.rynoxsoft.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="Rynoxsoft">
+  <meta property="og:title" content="Rynoxsoft | 일상에 더하는 편리함">
+  <meta property="og:description" content="Rynoxsoft의 앱, 웹서비스와 공식 소식을 한곳에서 확인하세요.">
+  <meta property="og:url" content="https://www.rynoxsoft.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Rynoxsoft</h1>
-        <p>감성적인 스토리와 몰입도 있는 게임을 만드는 인디 스튜디오</p>
-    </header>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>
-            Rynoxsoft는 스토리 중심의 연애 시뮬레이션과 감성 게임을 개발하는 인디 팀입니다.<br />
-            진심을 담은 캐릭터, 선택에 따라 달라지는 이야기, 그리고 여운이 남는 결말을 추구합니다.
-        </p>
-    </section>
-
-    <section id="games">
-        <h2>Our Games</h2>
-        <div class="games">
-            <div class="game-card">
-                <img src="campus-romance-thumbnail.png" alt="Campus Romance">
-                <h3>Campus Romance</h3>
-                <p>캠퍼스를 배경으로 펼쳐지는 감성 연애 시뮬레이션 게임</p>
-                
-                <a href="https://play.google.com/store/apps/details?id=com.rynoxsoft.campusromance" target="_blank">
-                    <img src="google-play-badge.png" alt="Google Play에서 다운로드" class="play-badge">
-                </a>
-                
-            </div>
-            </div>
-    </section>
-
-    <div class="contact">
-        <p>문의: <a href="mailto:rynoxsoft@gmail.com">rynoxsoft@gmail.com</a></p>
-        <p>© 2025 Rynoxsoft. All rights reserved.</p>
+  <a class="skip" href="#main">본문으로 바로가기</a>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#" aria-label="Rynoxsoft 홈"><span class="brand-mark" aria-hidden="true">r.</span>Rynoxsoft</a>
+      <nav aria-label="주 메뉴"><a href="#services">앱 · 서비스</a><a href="#about">소개</a><a href="https://blog.naver.com/rynoxsoft">공식 블로그 <span aria-hidden="true">↗</span></a></nav>
+      <a class="nav-contact" href="#contact">문의하기 <span aria-hidden="true">↗</span></a>
     </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> INDEPENDENT SOFTWARE STUDIO</p>
+          <h1 id="hero-title">일상에 편리함을.<br>필요한 순간에 <em>도움을.</em></h1>
+          <p class="hero-description">필요한 정보를 더 쉽게 찾고,<br>매일의 일을 조금 더 간편하게.<br>Rynoxsoft는 유용한 앱과 웹서비스를 만듭니다.</p>
+          <a class="button mint" href="#services">앱 · 서비스 둘러보기 <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="art-label">SMALL IDEAS.<br>USEFUL EXPERIENCES.</div>
+          <div class="art-tile tile-web"><span class="tile-symbol">⌕</span><span>Find something useful.</span><b>정보를 더 가까이</b></div>
+          <div class="art-tile tile-play"><span class="tile-symbol">✳</span><span>Make everyday simpler.</span><b>일상을 더 간편하게</b></div>
+          <span class="art-bottom">APPS / WEB SERVICES</span>
+        </div>
+      </div>
+      <div class="wrap hero-bottom"><span>작은 아이디어에서 시작되는 새로운 경험</span><span>MADE BY RYNOXSOFT <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <section class="section wrap" id="services" aria-labelledby="services-title">
+      <div class="section-heading"><div><p class="eyebrow muted">OUR PRODUCTS</p><h2 id="services-title">Rynoxsoft가 만드는 것들</h2></div><p>필요한 순간에 꺼내 쓰는 유용한 도구.<br>지금 이용할 수 있는 서비스를 만나보세요.</p></div>
+      <div class="products">
+        <article class="product">
+          <div class="product-visual nps-visual">
+            <span class="visual-kicker">공개 정보를 더 편리하게</span>
+            <svg class="building" viewBox="0 0 320 210" fill="none" aria-hidden="true">
+              <path d="M33 184h254" stroke="currentColor" stroke-width="2"/>
+              <path d="M78 183V64l90-31v150M168 83h73v100" fill="#e5f1de" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M104 80v13m36-25v13m-36 26v13m36-26v13m-36 26v13m36-26v13m-36 26v13m36-26v13m53-57h23m-23 26h23m-23 26h23" stroke="currentColor" stroke-width="7"/>
+              <circle cx="238" cy="61" r="31" fill="#142b2b"/><path d="m224 61 9 9 17-19" stroke="#c5edb3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="visual-footer">사업장 국민연금 가입 현황 <span aria-hidden="true">↗</span></span>
+          </div>
+          <div class="product-body">
+            <div class="tags"><span>정보 조회</span><span>Web</span><span>Android</span></div>
+            <h3>사업장 국민연금 가입 현황</h3>
+            <p>사업장명이나 사업자등록번호 앞 6자리로 검색하고, 국민연금 가입자 수와 보험료 고지금액, 월별 취득·상실 현황을 확인하세요.</p>
+            <ul class="features"><li>사업장 검색 · 지역별 범위 설정</li><li>조회 가능한 자료월별 가입 현황 확인</li><li>회원가입이나 로그인 없이 이용</li></ul>
+            <div class="product-actions"><a class="button dark" href="https://npssearch.vercel.app/">웹에서 이용하기 <span aria-hidden="true">↗</span></a><a class="text-link" href="https://play.google.com/store/apps/details?id=com.rynoxsoft.npssearch&amp;hl=ko">Android 앱 설치 <span aria-hidden="true">↗</span></a></div>
+            <p class="product-note">국민연금공단의 공개 데이터를 활용하는 민간 서비스입니다. 가입자 수는 전체 직원 수와 다를 수 있으며, 실시간 정보가 아닌 자료월 기준의 참고 자료입니다.</p>
+            <div class="utility-links"><a href="https://npssearch.vercel.app/guide">이용 안내</a><a href="https://npssearch.vercel.app/faq">FAQ</a><a href="https://npssearch.vercel.app/privacy">개인정보처리방침</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title"><div class="wrap about-grid"><div><p class="eyebrow muted">ABOUT RYNOXSOFT</p><h2 id="about-title">필요에서 출발하고,<br>경험으로 완성합니다.</h2></div><div class="about-copy"><p>Rynoxsoft는 일상과 업무에 도움이 되는 다양한 앱과 웹서비스를 개발하는 개인 개발자 브랜드입니다.</p><p>생활 속 작은 필요와 새로운 아이디어를 직접 만들고 다듬으며, 누구나 쉽게 이용할 수 있는 경험을 고민합니다.</p><a class="text-link" href="https://blog.naver.com/rynoxsoft">개발 소식과 서비스 이야기 <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section wrap news" aria-labelledby="news-title"><div><p class="eyebrow muted">NEWS & GUIDES</p><h2 id="news-title">서비스의 다음 이야기는<br>공식 블로그에서.</h2><p>처음 사용하는 분을 위한 안내부터 출시·업데이트 소식까지.<br>Rynoxsoft의 소식을 네이버 블로그에서 전합니다.</p><a class="text-link" href="https://blog.naver.com/rynoxsoft">공식 블로그 방문하기 <span aria-hidden="true">↗</span></a></div><a class="featured-post" href="https://blog.naver.com/rynoxsoft/224441936961"><span class="post-type">SERVICE GUIDE <span aria-hidden="true">↗</span></span><h3>회사 직원 규모가 궁금할 때,<br>국민연금 가입 현황 조회 방법</h3><p>조회할 수 있는 정보와 검색 방법,<br>공개 데이터를 해석할 때 알아둘 점을 안내합니다.</p><span class="post-bottom">사업장 국민연금 가입 현황 <span>글 읽기 →</span></span></a></section>
+    <section class="contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="eyebrow">GET IN TOUCH</p><h2 id="contact-title">궁금한 점이 있나요?</h2><p>이용 중인 앱·서비스 이름과 문의 내용을 함께 보내주세요.</p></div><a href="mailto:rynoxsoft@gmail.com">rynoxsoft@gmail.com <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#">Rynoxsoft<span class="footer-dot">.</span></a><p>© 2026 Rynoxsoft. All rights reserved.</p><a href="https://blog.naver.com/rynoxsoft">네이버 블로그 <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>
